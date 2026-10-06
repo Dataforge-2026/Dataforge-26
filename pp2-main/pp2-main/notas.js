@@ -9,26 +9,44 @@ async function carregarAlunos() {
 
   alunos.forEach((aluno) => {
     lista.innerHTML += `
-            <tr>
-                <td>${aluno.nome}</td>
-                <td>${aluno.matricula}</td>
-                <td>
-                    <input
-                        type="text"
-                        class="disciplina"
-                        placeholder="Disciplina">
-                </td>
-                <td>
-                    <input
-                        type="number"
-                        class="nota"
-                        min="0"
-                        max="10"
-                        step="0.1"
-                        data-id="${aluno.id}">
-                </td>
-            </tr>
-        `;
+      <tr>
+        <td>${aluno.nome}</td>
+
+        <td>${aluno.matricula}</td>
+
+        <td>
+          <label for="disciplina-${aluno.id}">
+            Disciplina de ${aluno.nome}
+          </label>
+
+          <input
+            type="text"
+            id="disciplina-${aluno.id}"
+            name="disciplina-${aluno.id}"
+            class="disciplina"
+            placeholder="Disciplina"
+          >
+        </td>
+
+        <td>
+          <label for="nota-${aluno.id}">
+            Nota de ${aluno.nome}
+          </label>
+
+          <input
+            type="number"
+            id="nota-${aluno.id}"
+            name="nota-${aluno.id}"
+            class="nota"
+            min="0"
+            max="10"
+            step="0.1"
+            data-id="${aluno.id}"
+            aria-label="Nota de ${aluno.nome}"
+          >
+        </td>
+      </tr>
+    `;
   });
 }
 
