@@ -13,11 +13,34 @@
       <h1>Cadastro de Professores</h1>
 
       <form id="form-professor">
-        <input type="text" id="nome" placeholder="Nome do professor" required />
+        <label for="nome">Nome do professor</label>
+        <input
+          type="text"
+          id="nome"
+          name="nome"
+          placeholder="Nome do professor"
+          autocomplete="name"
+          required
+        />
 
-        <input type="text" id="cpf" placeholder="CPF" required />
+        <label for="cpf">CPF</label>
+        <input
+          type="text"
+          id="cpf"
+          name="cpf"
+          placeholder="CPF"
+          autocomplete="off"
+          required
+        />
 
-        <input type="text" id="disciplina" placeholder="Disciplina" required />
+        <label for="disciplina">Disciplina</label>
+        <input
+          type="text"
+          id="disciplina"
+          name="disciplina"
+          placeholder="Disciplina"
+          required
+        />
 
         <button type="submit">Cadastrar</button>
       </form>
@@ -29,10 +52,10 @@
       <table class="tabela-professores">
         <thead>
           <tr>
-            <th>Nome</th>
-            <th>CPF</th>
-            <th>Disciplina</th>
-            <th>Ações</th>
+            <th scope="col">Nome</th>
+            <th scope="col">CPF</th>
+            <th scope="col">Disciplina</th>
+            <th scope="col">Ações</th>
           </tr>
         </thead>
 
