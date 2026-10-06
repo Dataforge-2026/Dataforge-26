@@ -21,14 +21,30 @@ form {
   flex-direction: column;
 }
 
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
 input {
   padding: 10px;
   margin-bottom: 10px;
+  border: 1px solid #767676;
+  border-radius: 4px;
+  color: #111111;
+  background-color: #ffffff;
+}
+
+input:focus {
+  border-color: #0a2540;
+  outline: 2px solid #0a2540;
+  outline-offset: 1px;
 }
 
 button {
   padding: 10px;
 }
+
 p {
   text-align: justify;
   margin-bottom: 20px;
