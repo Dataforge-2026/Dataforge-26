@@ -51,6 +51,11 @@ body {
   background: #163b63;
 }
 
+.sidebar a:focus {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
 /* CONTEUDO */
 
 .main {
@@ -145,4 +150,10 @@ header span {
 .card a:hover,
 .card button:hover {
   background: #163b63;
+}
+
+.card a:focus,
+.card button:focus {
+  outline: 2px solid #0a2540;
+  outline-offset: 2px;
 }
