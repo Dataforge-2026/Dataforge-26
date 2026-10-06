@@ -38,6 +38,11 @@ body {
   background: #163b63;
 }
 
+.sidebar a:focus {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
 .conteudo {
   margin-left: 250px;
   width: calc(100% - 250px);
@@ -93,4 +98,9 @@ body {
 
 .card a:hover {
   background: #163b63;
+}
+
+.card a:focus {
+  outline: 2px solid #0a2540;
+  outline-offset: 2px;
 }
