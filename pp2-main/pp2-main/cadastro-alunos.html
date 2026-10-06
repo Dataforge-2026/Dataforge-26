@@ -12,11 +12,33 @@
       <h1>Cadastro de Alunos</h1>
 
       <form id="form-aluno">
-        <input type="text" id="nome" placeholder="Nome do aluno" required />
+        <label for="nome">Nome do aluno</label>
+        <input
+          type="text"
+          id="nome"
+          name="nome"
+          placeholder="Nome do aluno"
+          autocomplete="name"
+          required
+        />
 
-        <input type="text" id="matricula" placeholder="Matrícula" required />
+        <label for="matricula">Matrícula</label>
+        <input
+          type="text"
+          id="matricula"
+          name="matricula"
+          placeholder="Matrícula"
+          required
+        />
 
-        <input type="text" id="turma" placeholder="Turma" required />
+        <label for="turma">Turma</label>
+        <input
+          type="text"
+          id="turma"
+          name="turma"
+          placeholder="Turma"
+          required
+        />
 
         <button type="submit" id="btn-salvar">Cadastrar</button>
       </form>
@@ -28,10 +50,10 @@
       <table class="tabela-alunos">
         <thead>
           <tr>
-            <th>Nome</th>
-            <th>Matrícula</th>
-            <th>Turma</th>
-            <th>Ações</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Matrícula</th>
+            <th scope="col">Turma</th>
+            <th scope="col">Ações</th>
           </tr>
         </thead>
 
